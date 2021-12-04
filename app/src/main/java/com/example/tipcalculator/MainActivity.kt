@@ -38,7 +38,8 @@ class MainActivity : AppCompatActivity() {
 
             R.id.option_amazing -> 0.20
             R.id.option_good -> 0.18
-            else -> 0.15
+            R.id.option_okay -> 0.15
+            else -> 0.08
         }
 
         var tip = tipPercent * cost
