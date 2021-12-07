@@ -9,4 +9,6 @@
     <string name="calculate">Calculate</string>
     <string name="tip_amount">Tip Amount: %s</string>
     <string name="unsatisfactory_8">Unsatisfactory (8%)</string>
+    <string name="label">label</string>
+    <string name="okay_15">Okay (15%)</string>
 </resources>

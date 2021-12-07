@@ -14,14 +14,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)                   //root comes top and connects everything
+        setContentView(binding.root)                        //root comes top and connects everything
 
         binding.calculateBtn.setOnClickListener { calculateTip() }
     }
 
     private fun calculateTip() {
 
-        val cost = binding.costOfService.text.toString().toDoubleOrNull()
+        val cost = binding.costOfServiceEditText.text.toString().toDoubleOrNull()
 
         if (cost == null) {
             val popUp =               //the Toast generates a pop-up message when button is clicked
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             return
         }
         else if (cost == 0.0){
-            val popUp =               //the Toast generates a pop-up message when button is clicked
+            val popUp =
                 Toast.makeText(this, "Cost of Service can't be 0", Toast.LENGTH_SHORT).show()
             return
         }
